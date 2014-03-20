@@ -1,0 +1,24 @@
+\documentclass{article}
+\usepackage{svg}
+\setsvg{
+    inkscape = inkscape -z -D % conversion options for svg package
+}
+
+\begin{document}
+\begin{figure}
+    \centering
+    \includesvg[width=0.7\textwidth, svgpath = images/]{example}
+    \caption{}
+    \label{fig:example}
+\end{figure}
+
+\begin{figure}
+    \centering
+    {\bf\Large
+        \includesvg[width=0.9\textwidth, svgpath = images/]{example}
+    }
+    \caption{}
+    \label{fig:example2}
+\end{figure}
+
+\end{document}
