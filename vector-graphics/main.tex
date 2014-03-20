@@ -1,23 +1,23 @@
 \documentclass{article}
 \usepackage{svg}
-\setsvg{
-    inkscape = inkscape -z -D % conversion options for svg package
-}
+% \setsvg{
+%     inkscape = inkscape -z -D % conversion options for svg package
+% }
 
 \begin{document}
 \begin{figure}
     \centering
-    \includesvg[width=0.7\textwidth, svgpath = images/]{example}
-    \caption{}
+    \includesvg[svgpath = images/]{example}
+    \caption{Figure will regular font.}
     \label{fig:example}
 \end{figure}
 
 \begin{figure}
     \centering
     {\bf\Large
-        \includesvg[width=0.9\textwidth, svgpath = images/]{example}
+        \includesvg[svgpath = images/]{example}
     }
-    \caption{}
+    \caption{Figure with large and bold font.}
     \label{fig:example2}
 \end{figure}
 
